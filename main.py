@@ -3,7 +3,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 import finnhub
 
-finnhub_client = finnhub.Client(api_key="d37gq5hr01qskreg6v9gd37gq5hr01qskreg6va0")
+finnhub_client = finnhub.Client(api_key="")
 
 def get_earnings_data_for_week(week_start_date):
     url = "https://www.dolthub.com/api/v1alpha1/post-no-preference/earnings/master"
