@@ -106,6 +106,13 @@ SENTIMENT SCORING GUIDELINES:
 - Negative (-4 to -7): Missing expectations, declining performance, bearish sentiment, analyst downgrades
 - Very Negative (-8 to -10): Major problems, significant losses, very poor outlook, serious concerns
 
+Examples:
+- "Apple beats earnings expectations, revenue up 20%" → +8
+- "Microsoft misses quarterly revenue targets, shares fall" → -7
+- "Tesla announces stock split; market reacts positively" → +5
+- "Amazon CFO resigns unexpectedly, concerns over leadership" → -6
+- "Meta to present at annual tech conference" → 0
+
 IMPORTANT: Visit each URL, read the full article content, and return only a single integer from -10 to +10."""
                 },
                 {
