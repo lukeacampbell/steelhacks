@@ -326,3 +326,33 @@ if __name__ == "__main__":
     
     # Save URLs and ticker data to JSON file for Gemini API
     json_filename = save_urls_to_json(news_data, earnings_by_day)
+    
+    # Run sentiment analysis with Gemini
+    print("\n" + "="*80)
+    print("STARTING SENTIMENT ANALYSIS WITH GEMINI")
+    print("="*80)
+    
+    try:
+        from gemini import process_earnings_sentiment
+        sentiment_results = process_earnings_sentiment(json_filename)
+        
+        # Print final summary
+        print("\n" + "="*80)
+        print("FINAL SENTIMENT SUMMARY")
+        print("="*80)
+        
+        # Sort by sentiment score
+        sorted_results = sorted(sentiment_results.items(), key=lambda x: x[1]['average_sentiment'], reverse=True)
+        
+        print(f"\n🟢 MOST POSITIVE SENTIMENT:")
+        for symbol, data in sorted_results[:5]:
+            print(f"  {symbol}: {data['average_sentiment']} ({data['article_count']} articles) - {data['earnings_day']}")
+        
+        print(f"\n🔴 MOST NEGATIVE SENTIMENT:")
+        for symbol, data in sorted_results[-5:]:
+            print(f"  {symbol}: {data['average_sentiment']} ({data['article_count']} articles) - {data['earnings_day']}")
+            
+    except ImportError:
+        print("⚠️  Gemini module not available. Run 'python gemini.py' separately for sentiment analysis.")
+    except Exception as e:
+        print(f"⚠️  Error running sentiment analysis: {e}")
