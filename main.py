@@ -32,8 +32,21 @@ def get_earnings_data(weeks_ahead=1):
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
         }
         
-        # Try the SQL query endpoint to get earnings_calendar table - try getting more recent data
-        query_url = f"{url}?q=SELECT * FROM earnings_calendar WHERE date >= '2025-09-20' ORDER BY date ASC LIMIT 1000"
+        # Calculate target week dates first
+        today = datetime.now()
+        
+        if weeks_ahead == 0:  # This week
+            week_start = today - timedelta(days=today.weekday())  # Monday
+        else:  # Future weeks
+            days_until_target_monday = (7 * weeks_ahead) - today.weekday()
+            if today.weekday() == 0 and weeks_ahead == 1:  # If today is Monday, get next Monday
+                days_until_target_monday = 7
+            week_start = today + timedelta(days=days_until_target_monday)
+        
+        week_end = week_start + timedelta(days=6)  # Sunday
+        
+        # Query earnings calendar for the specific week
+        query_url = f"{url}?q=SELECT * FROM earnings_calendar WHERE date >= '{week_start.strftime('%Y-%m-%d')}' AND date <= '{week_end.strftime('%Y-%m-%d')}' ORDER BY date ASC"
         
         response = requests.get(query_url, headers=headers)
         
@@ -50,39 +63,16 @@ def get_earnings_data(weeks_ahead=1):
         df = pd.DataFrame(data['rows'])
         
         if df.empty:
-            return None, None, {"error": "No earnings data available"}
+            # No earnings for the target week
+            return None, {}, {"total_count": 0, "week_start": week_start, "week_end": week_end, "error": "No earnings for target week"}
         
-        # Get current date and calculate target week's date range
-        today = datetime.now()
-        
-        if weeks_ahead == 0:  # This week
-            week_start = today - timedelta(days=today.weekday())  # Monday
-        else:  # Future weeks
-            days_until_target_monday = (7 * weeks_ahead) - today.weekday()
-            if today.weekday() == 0 and weeks_ahead == 1:  # If today is Monday, get next Monday
-                days_until_target_monday = 7
-            week_start = today + timedelta(days=days_until_target_monday)
-        
-        week_end = week_start + timedelta(days=6)  # Sunday
-        
-        # Convert date column to datetime
+        # Convert date column to datetime for grouping
         date_column = 'date' if 'date' in df.columns else df.columns[0]
         df[date_column] = pd.to_datetime(df[date_column])
         
-        # Filter for target week
-        week_earnings = df[
-            (df[date_column] >= week_start.strftime('%Y-%m-%d')) & 
-            (df[date_column] <= week_end.strftime('%Y-%m-%d'))
-        ]
-        
-        if week_earnings.empty:
-            # No earnings for the target week - don't use fallback, just return empty
-            print(f"DEBUG: No earnings found for target week {week_start.strftime('%Y-%m-%d')} to {week_end.strftime('%Y-%m-%d')}")
-            return None, {}, {"total_count": 0, "week_start": week_start, "week_end": week_end, "error": "No earnings for target week"}
-        
         # Group earnings by day - ignore timing
         earnings_by_day = {}
-        for date, group in week_earnings.groupby('date'):
+        for date, group in df.groupby('date'):
             day_data = {
                 'symbols': group['act_symbol'].tolist(),
                 'count': len(group)
@@ -91,14 +81,14 @@ def get_earnings_data(weeks_ahead=1):
         
         # Summary statistics
         summary_stats = {
-            'total_count': len(week_earnings),
+            'total_count': len(df),
             'week_start': week_start,
             'week_end': week_end,
             'days_with_earnings': len(earnings_by_day),
             'total_records_fetched': len(df)
         }
         
-        return week_earnings, earnings_by_day, summary_stats
+        return df, earnings_by_day, summary_stats
         
     except Exception as e:
         return None, None, {"error": str(e)}
@@ -225,6 +215,44 @@ def print_news_summary(news_data):
     print(f"Total unique news sources: {len(total_sources)}")
     print(f"All sources: {', '.join(sorted(total_sources))}")
 
+def save_urls_to_json(news_data, earnings_by_day, filename="earnings_news_urls.json"):
+    """
+    Save ticker symbols and URLs to JSON file for Gemini API
+    """
+    # Create structured data for Gemini API
+    gemini_data = {
+        "earnings_week": "2025-09-22 to 2025-09-28",
+        "generated_at": datetime.now().isoformat(),
+        "total_companies": len(news_data),
+        "companies": {}
+    }
+    
+    # Add earnings day information and URLs for each ticker
+    for date_str, day_data in earnings_by_day.items():
+        date_obj = datetime.strptime(date_str, '%Y-%m-%d')
+        day_name = date_obj.strftime('%A')
+        
+        for symbol in day_data['symbols']:
+            symbol_news = news_data.get(symbol, {})
+            urls = symbol_news.get('urls', [])
+            
+            gemini_data["companies"][symbol] = {
+                "earnings_date": date_str,
+                "earnings_day": day_name,
+                "article_count": len(urls),
+                "urls": [article['url'] for article in urls],  # Just the URLs for Gemini
+                "article_details": urls  # Full article data if needed
+            }
+    
+    # Save to JSON file
+    with open(filename, 'w', encoding='utf-8') as f:
+        json.dump(gemini_data, f, indent=2, ensure_ascii=False)
+    
+    print(f"\n✅ Saved {len(gemini_data['companies'])} companies and their URLs to '{filename}'")
+    print(f"📊 Total URLs saved: {sum(len(company['urls']) for company in gemini_data['companies'].values())}")
+    
+    return filename
+
 def print_all_urls(news_data):
     """
     Print all URLs for each ticker
@@ -249,7 +277,7 @@ def print_all_urls(news_data):
             print("No articles found")
 
 if __name__ == "__main__":
-    # Example usage - get next week's earnings
+    # Get next week's earnings data
     earnings_df, earnings_by_day, summary_stats = get_earnings_data(weeks_ahead=1)
     
     if earnings_df is not None:
@@ -265,41 +293,36 @@ if __name__ == "__main__":
     
     print(f"Earnings for week: {formatted_summary['week_range']}")
     print(f"Total companies reporting: {formatted_summary['total_companies']}")
-    print("-" * 50)
-    
-    # Print each day's symbols
-    for date_str, day_info in formatted_summary['daily_breakdown'].items():
-        day_name = day_info['day_name']
-        symbols = day_info['symbols']
-        count = day_info['count']
-        
-        print(f"\n{day_name} ({date_str}):")
-        print(f"Companies reporting: {count}")
-        if symbols:
-            print(f"Symbols: {', '.join(symbols)}")
-            # Print each symbol on its own line for better readability
-            print("Earnings today:")
-            for i, symbol in enumerate(symbols, 1):
-                print(f"  {i}. {symbol}")
-        else:
-            print("No earnings scheduled")
+    print("Fetching news data...")
     
     # Get all symbols for news lookup
     all_symbols = formatted_summary['all_symbols']
     
     print(f"\n\nTotal symbols with earnings this week: {len(all_symbols)}")
     
-    # Comment out news fetching for now
-    # # For testing, let's use first 20 symbols to avoid hitting rate limits too quickly
-    # test_symbols = all_symbols[:20]
-    # 
-    # print(f"\n\nFetching news for {len(test_symbols)} companies (subset of {len(all_symbols)} total)...")
-    # 
-    # # Get news URLs for symbols
-    # news_data = get_company_news_urls(test_symbols, days_back=30)
-    # 
-    # # Print summary
-    # print_news_summary(news_data)
-    # 
-    # # Uncomment if you want to see all URLs
-    # print_all_urls(news_data)
+    # Get news URLs for symbols
+    news_data = get_company_news_urls(all_symbols, days_back=30)
+    
+    # Print daily breakdown with news counts
+    print("\n" + "="*80)
+    print("DAILY BREAKDOWN WITH NEWS ARTICLE COUNTS")
+    print("="*80)
+    
+    # Convert date strings to day names for better display
+    from datetime import datetime
+    for date_str, day_data in earnings_by_day.items():
+        date_obj = datetime.strptime(date_str, '%Y-%m-%d')
+        day_name = date_obj.strftime('%A')
+        symbols = day_data['symbols']
+        
+        print(f"\n{day_name} ({date_str}):")
+        for symbol in symbols:
+            article_count = news_data.get(symbol, {}).get('article_count', 0)
+            print(f"  {symbol}: {article_count} articles")
+        
+        total_articles = sum(news_data.get(symbol, {}).get('article_count', 0) for symbol in symbols)
+        print(f"  Total articles for {day_name}: {total_articles}")
+        print(f"  Companies reporting: {len(symbols)}")
+    
+    # Save URLs and ticker data to JSON file for Gemini API
+    json_filename = save_urls_to_json(news_data, earnings_by_day)
