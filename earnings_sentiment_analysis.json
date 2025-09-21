@@ -5,499 +5,747 @@
   "sentiment_results": [
     {
       "ticker": "EBF",
-      "sentiment_score": 6
+      "sentiment_score": 0,
+      "articles_analyzed": 15,
+      "total_articles_available": 21
     },
     {
       "ticker": "FEAM",
-      "sentiment_score": 4
+      "sentiment_score": 1,
+      "articles_analyzed": 4,
+      "total_articles_available": 4
     },
     {
       "ticker": "FLY",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 3,
+      "total_articles_available": 3
     },
     {
       "ticker": "GETR",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 1,
+      "total_articles_available": 1
     },
     {
       "ticker": "GPAK",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "IMG",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "LZM",
-      "sentiment_score": 8
+      "sentiment_score": 8,
+      "articles_analyzed": 1,
+      "total_articles_available": 1
     },
     {
       "ticker": "MARK",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "MRT",
-      "sentiment_score": 6
+      "sentiment_score": 1,
+      "articles_analyzed": 2,
+      "total_articles_available": 2
     },
     {
       "ticker": "MSS",
-      "sentiment_score": 8
+      "sentiment_score": 0,
+      "articles_analyzed": 2,
+      "total_articles_available": 2
     },
     {
       "ticker": "MSVB",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "NCPL",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "OFED",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "PACS",
-      "sentiment_score": -2
+      "sentiment_score": 10,
+      "articles_analyzed": 10,
+      "total_articles_available": 10
     },
     {
       "ticker": "SPEC",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "TLIS",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "TORO",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "TTOO",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "USDP",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "UXIN",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "VAPO",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "VRPX",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "VSEE",
-      "sentiment_score": 2
+      "sentiment_score": 6,
+      "articles_analyzed": 2,
+      "total_articles_available": 2
     },
     {
       "ticker": "AIR",
-      "sentiment_score": 8
+      "sentiment_score": 6,
+      "articles_analyzed": 15,
+      "total_articles_available": 24
     },
     {
       "ticker": "ATON",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "AYTU",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "AZO",
-      "sentiment_score": 8
+      "sentiment_score": 9,
+      "articles_analyzed": 15,
+      "total_articles_available": 30
     },
     {
       "ticker": "BNED",
-      "sentiment_score": 8
+      "sentiment_score": 8,
+      "articles_analyzed": 6,
+      "total_articles_available": 6
     },
     {
       "ticker": "CTLP",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "DYNT",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "FNCH",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "FPAY",
-      "sentiment_score": -8
+      "sentiment_score": -6,
+      "articles_analyzed": 1,
+      "total_articles_available": 1
     },
     {
       "ticker": "KBSX",
-      "sentiment_score": 0
+      "sentiment_score": 1,
+      "articles_analyzed": 2,
+      "total_articles_available": 2
     },
     {
       "ticker": "MAXN",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "MLKN",
-      "sentiment_score": 2
+      "sentiment_score": 5,
+      "articles_analyzed": 5,
+      "total_articles_available": 5
     },
     {
       "ticker": "MU",
-      "sentiment_score": 8
+      "sentiment_score": -2,
+      "articles_analyzed": 15,
+      "total_articles_available": 227
     },
     {
       "ticker": "NBIS",
-      "sentiment_score": 8
+      "sentiment_score": 7,
+      "articles_analyzed": 15,
+      "total_articles_available": 42
     },
     {
       "ticker": "PBLA",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "PETS",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "PGRU",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "PMD",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "SRXH",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "WETH",
-      "sentiment_score": 4
+      "sentiment_score": 6,
+      "articles_analyzed": 3,
+      "total_articles_available": 3
     },
     {
       "ticker": "WOR",
-      "sentiment_score": 8
+      "sentiment_score": 7,
+      "articles_analyzed": 9,
+      "total_articles_available": 9
     },
     {
       "ticker": "ANEB",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "ARBK",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "BENF",
-      "sentiment_score": -2
+      "sentiment_score": 6,
+      "articles_analyzed": 3,
+      "total_articles_available": 3
     },
     {
       "ticker": "BNAI",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "BNC",
-      "sentiment_score": 4
+      "sentiment_score": 1,
+      "articles_analyzed": 2,
+      "total_articles_available": 2
     },
     {
       "ticker": "BTCT",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "CAUD",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "CODI",
-      "sentiment_score": -2
+      "sentiment_score": 4,
+      "articles_analyzed": 6,
+      "total_articles_available": 6
     },
     {
       "ticker": "CRKN",
-      "sentiment_score": 2
+      "sentiment_score": 7,
+      "articles_analyzed": 1,
+      "total_articles_available": 1
     },
     {
       "ticker": "CTAS",
-      "sentiment_score": 4
+      "sentiment_score": 6,
+      "articles_analyzed": 15,
+      "total_articles_available": 23
     },
     {
       "ticker": "ENSV",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "FUL",
-      "sentiment_score": 2
+      "sentiment_score": 5,
+      "articles_analyzed": 7,
+      "total_articles_available": 7
     },
     {
       "ticker": "ILLR",
-      "sentiment_score": -2
+      "sentiment_score": -4,
+      "articles_analyzed": 3,
+      "total_articles_available": 3
     },
     {
       "ticker": "KBH",
-      "sentiment_score": 4
+      "sentiment_score": 7,
+      "articles_analyzed": 15,
+      "total_articles_available": 38
     },
     {
       "ticker": "LU",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "MOVE",
-      "sentiment_score": -2
+      "sentiment_score": 0,
+      "articles_analyzed": 4,
+      "total_articles_available": 4
     },
     {
       "ticker": "MPU",
-      "sentiment_score": 4
+      "sentiment_score": 0,
+      "articles_analyzed": 1,
+      "total_articles_available": 1
     },
     {
       "ticker": "NAAS",
-      "sentiment_score": 4
+      "sentiment_score": 5,
+      "articles_analyzed": 2,
+      "total_articles_available": 2
     },
     {
       "ticker": "NAMM",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "NEXI",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "OP",
-      "sentiment_score": -2
+      "sentiment_score": -4,
+      "articles_analyzed": 3,
+      "total_articles_available": 3
     },
     {
       "ticker": "PPYA",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "RMSG",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "SCS",
-      "sentiment_score": 2
+      "sentiment_score": 5,
+      "articles_analyzed": 6,
+      "total_articles_available": 6
     },
     {
       "ticker": "SFIX",
-      "sentiment_score": 2
+      "sentiment_score": 9,
+      "articles_analyzed": 9,
+      "total_articles_available": 9
     },
     {
       "ticker": "SNAX",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "SONX",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "TBIO",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "TFFP",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "THO",
-      "sentiment_score": 2
+      "sentiment_score": 10,
+      "articles_analyzed": 14,
+      "total_articles_available": 14
     },
     {
       "ticker": "TRIB",
-      "sentiment_score": -2
+      "sentiment_score": 5,
+      "articles_analyzed": 12,
+      "total_articles_available": 12
     },
     {
       "ticker": "UEC",
-      "sentiment_score": 8
+      "sentiment_score": 6,
+      "articles_analyzed": 15,
+      "total_articles_available": 20
     },
     {
       "ticker": "USBC",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "VHAI",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "VINO",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "WS",
-      "sentiment_score": 2
+      "sentiment_score": 0,
+      "articles_analyzed": 3,
+      "total_articles_available": 3
     },
     {
       "ticker": "WTER",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "XELA",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "ZPTA",
-      "sentiment_score": 8
+      "sentiment_score": 8,
+      "articles_analyzed": 1,
+      "total_articles_available": 1
     },
     {
       "ticker": "AACT",
-      "sentiment_score": 8
+      "sentiment_score": 5,
+      "articles_analyzed": 5,
+      "total_articles_available": 5
     },
     {
       "ticker": "ACN",
-      "sentiment_score": 4
+      "sentiment_score": 6,
+      "articles_analyzed": 15,
+      "total_articles_available": 93
     },
     {
       "ticker": "AFIB",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "BB",
-      "sentiment_score": 2
+      "sentiment_score": 6,
+      "articles_analyzed": 11,
+      "total_articles_available": 11
     },
     {
       "ticker": "BNTC",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "CMBM",
-      "sentiment_score": 2
+      "sentiment_score": 4,
+      "articles_analyzed": 4,
+      "total_articles_available": 4
     },
     {
       "ticker": "CNXC",
-      "sentiment_score": 8
+      "sentiment_score": 7,
+      "articles_analyzed": 11,
+      "total_articles_available": 11
     },
     {
       "ticker": "COST",
-      "sentiment_score": 6
+      "sentiment_score": 5,
+      "articles_analyzed": 15,
+      "total_articles_available": 166
     },
     {
       "ticker": "CTRM",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 2,
+      "total_articles_available": 2
     },
     {
       "ticker": "DTSS",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "EM",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "GHG",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "HOOK",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 1,
+      "total_articles_available": 1
     },
     {
       "ticker": "HTLM",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "IVA",
-      "sentiment_score": 8
+      "sentiment_score": 8,
+      "articles_analyzed": 3,
+      "total_articles_available": 3
     },
     {
       "ticker": "JBL",
-      "sentiment_score": 8
+      "sentiment_score": 7,
+      "articles_analyzed": 15,
+      "total_articles_available": 46
     },
     {
       "ticker": "KMX",
-      "sentiment_score": 8
+      "sentiment_score": 10,
+      "articles_analyzed": 15,
+      "total_articles_available": 18
     },
     {
       "ticker": "LPTH",
-      "sentiment_score": 2
+      "sentiment_score": 1,
+      "articles_analyzed": 2,
+      "total_articles_available": 2
     },
     {
       "ticker": "LUXE",
-      "sentiment_score": 4
+      "sentiment_score": 1,
+      "articles_analyzed": 6,
+      "total_articles_available": 6
     },
     {
       "ticker": "NKGN",
-      "sentiment_score": 8
+      "sentiment_score": 8,
+      "articles_analyzed": 1,
+      "total_articles_available": 1
     },
     {
       "ticker": "ORGS",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "PRFX",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "PZG",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "RAVE",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "REE",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "SCNI",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "SNX",
-      "sentiment_score": 8
+      "sentiment_score": 9,
+      "articles_analyzed": 15,
+      "total_articles_available": 19
     },
     {
       "ticker": "TRVN",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "VINC",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "ZNH",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "FONR",
-      "sentiment_score": 1
+      "sentiment_score": 1,
+      "articles_analyzed": 2,
+      "total_articles_available": 2
     },
     {
       "ticker": "INM",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "IONM",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "IPX",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "KNOP",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "MITQ",
-      "sentiment_score": 8
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 1
     },
     {
       "ticker": "NAII",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "NEOV",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "NNVC",
-      "sentiment_score": 2
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 1
     },
     {
       "ticker": "SING",
-      "sentiment_score": 0
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 0
     },
     {
       "ticker": "TAYD",
-      "sentiment_score": 8
+      "sentiment_score": 0,
+      "articles_analyzed": 0,
+      "total_articles_available": 2
     }
   ]
 }
