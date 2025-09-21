@@ -300,8 +300,25 @@ if __name__ == "__main__":
     
     print(f"\n\nTotal symbols with earnings this week: {len(all_symbols)}")
     
-    # Get news URLs for symbols
-    news_data = get_company_news_urls(all_symbols, days_back=30)
+    # Load existing news data from JSON file (skip fetching since it's already done)
+    print("Loading existing news data from earnings_news_urls.json...")
+    try:
+        with open("earnings_news_urls.json", 'r', encoding='utf-8') as f:
+            json_data = json.load(f)
+        
+        # Convert JSON format back to news_data format for display
+        news_data = {}
+        for symbol, company_data in json_data['companies'].items():
+            news_data[symbol] = {
+                'urls': company_data['article_details'],
+                'article_count': company_data['article_count'],
+                'unique_sources': 0,  # Not needed for sentiment analysis
+                'sources': []
+            }
+        print(f"✅ Loaded news data for {len(news_data)} companies")
+    except FileNotFoundError:
+        print("❌ No existing news data found. Please run news fetching first.")
+        exit()
     
     # Print daily breakdown with news counts
     print("\n" + "="*80)
@@ -327,13 +344,13 @@ if __name__ == "__main__":
     # Save URLs and ticker data to JSON file for Gemini API
     json_filename = save_urls_to_json(news_data, earnings_by_day)
     
-    # Run sentiment analysis with Gemini
+    # Run sentiment analysis with LLM (Groq)
     print("\n" + "="*80)
-    print("STARTING SENTIMENT ANALYSIS WITH GEMINI")
+    print("STARTING SENTIMENT ANALYSIS WITH GROQ LLM")
     print("="*80)
     
     try:
-        from gemini import process_earnings_sentiment
+        from LLM import process_earnings_sentiment
         sentiment_results = process_earnings_sentiment(json_filename)
         
         # Print final summary
@@ -353,6 +370,6 @@ if __name__ == "__main__":
             print(f"  {symbol}: {data['average_sentiment']} ({data['article_count']} articles) - {data['earnings_day']}")
             
     except ImportError:
-        print("⚠️  Gemini module not available. Run 'python gemini.py' separately for sentiment analysis.")
+        print("⚠️  LLM module not available. Run 'python LLM.py' separately for sentiment analysis.")
     except Exception as e:
         print(f"⚠️  Error running sentiment analysis: {e}")

@@ -1,0 +1,503 @@
+{
+  "analysis_date": "2025-09-20T22:16:07.764553",
+  "earnings_week": "2025-09-22 to 2025-09-28",
+  "total_companies_analyzed": 124,
+  "sentiment_results": [
+    {
+      "ticker": "EBF",
+      "sentiment_score": 6
+    },
+    {
+      "ticker": "FEAM",
+      "sentiment_score": 4
+    },
+    {
+      "ticker": "FLY",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "GETR",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "GPAK",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "IMG",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "LZM",
+      "sentiment_score": 8
+    },
+    {
+      "ticker": "MARK",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "MRT",
+      "sentiment_score": 6
+    },
+    {
+      "ticker": "MSS",
+      "sentiment_score": 8
+    },
+    {
+      "ticker": "MSVB",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "NCPL",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "OFED",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "PACS",
+      "sentiment_score": -2
+    },
+    {
+      "ticker": "SPEC",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "TLIS",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "TORO",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "TTOO",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "USDP",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "UXIN",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "VAPO",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "VRPX",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "VSEE",
+      "sentiment_score": 2
+    },
+    {
+      "ticker": "AIR",
+      "sentiment_score": 8
+    },
+    {
+      "ticker": "ATON",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "AYTU",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "AZO",
+      "sentiment_score": 8
+    },
+    {
+      "ticker": "BNED",
+      "sentiment_score": 8
+    },
+    {
+      "ticker": "CTLP",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "DYNT",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "FNCH",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "FPAY",
+      "sentiment_score": -8
+    },
+    {
+      "ticker": "KBSX",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "MAXN",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "MLKN",
+      "sentiment_score": 2
+    },
+    {
+      "ticker": "MU",
+      "sentiment_score": 8
+    },
+    {
+      "ticker": "NBIS",
+      "sentiment_score": 8
+    },
+    {
+      "ticker": "PBLA",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "PETS",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "PGRU",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "PMD",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "SRXH",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "WETH",
+      "sentiment_score": 4
+    },
+    {
+      "ticker": "WOR",
+      "sentiment_score": 8
+    },
+    {
+      "ticker": "ANEB",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "ARBK",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "BENF",
+      "sentiment_score": -2
+    },
+    {
+      "ticker": "BNAI",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "BNC",
+      "sentiment_score": 4
+    },
+    {
+      "ticker": "BTCT",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "CAUD",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "CODI",
+      "sentiment_score": -2
+    },
+    {
+      "ticker": "CRKN",
+      "sentiment_score": 2
+    },
+    {
+      "ticker": "CTAS",
+      "sentiment_score": 4
+    },
+    {
+      "ticker": "ENSV",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "FUL",
+      "sentiment_score": 2
+    },
+    {
+      "ticker": "ILLR",
+      "sentiment_score": -2
+    },
+    {
+      "ticker": "KBH",
+      "sentiment_score": 4
+    },
+    {
+      "ticker": "LU",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "MOVE",
+      "sentiment_score": -2
+    },
+    {
+      "ticker": "MPU",
+      "sentiment_score": 4
+    },
+    {
+      "ticker": "NAAS",
+      "sentiment_score": 4
+    },
+    {
+      "ticker": "NAMM",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "NEXI",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "OP",
+      "sentiment_score": -2
+    },
+    {
+      "ticker": "PPYA",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "RMSG",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "SCS",
+      "sentiment_score": 2
+    },
+    {
+      "ticker": "SFIX",
+      "sentiment_score": 2
+    },
+    {
+      "ticker": "SNAX",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "SONX",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "TBIO",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "TFFP",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "THO",
+      "sentiment_score": 2
+    },
+    {
+      "ticker": "TRIB",
+      "sentiment_score": -2
+    },
+    {
+      "ticker": "UEC",
+      "sentiment_score": 8
+    },
+    {
+      "ticker": "USBC",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "VHAI",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "VINO",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "WS",
+      "sentiment_score": 2
+    },
+    {
+      "ticker": "WTER",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "XELA",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "ZPTA",
+      "sentiment_score": 8
+    },
+    {
+      "ticker": "AACT",
+      "sentiment_score": 8
+    },
+    {
+      "ticker": "ACN",
+      "sentiment_score": 4
+    },
+    {
+      "ticker": "AFIB",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "BB",
+      "sentiment_score": 2
+    },
+    {
+      "ticker": "BNTC",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "CMBM",
+      "sentiment_score": 2
+    },
+    {
+      "ticker": "CNXC",
+      "sentiment_score": 8
+    },
+    {
+      "ticker": "COST",
+      "sentiment_score": 6
+    },
+    {
+      "ticker": "CTRM",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "DTSS",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "EM",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "GHG",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "HOOK",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "HTLM",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "IVA",
+      "sentiment_score": 8
+    },
+    {
+      "ticker": "JBL",
+      "sentiment_score": 8
+    },
+    {
+      "ticker": "KMX",
+      "sentiment_score": 8
+    },
+    {
+      "ticker": "LPTH",
+      "sentiment_score": 2
+    },
+    {
+      "ticker": "LUXE",
+      "sentiment_score": 4
+    },
+    {
+      "ticker": "NKGN",
+      "sentiment_score": 8
+    },
+    {
+      "ticker": "ORGS",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "PRFX",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "PZG",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "RAVE",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "REE",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "SCNI",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "SNX",
+      "sentiment_score": 8
+    },
+    {
+      "ticker": "TRVN",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "VINC",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "ZNH",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "FONR",
+      "sentiment_score": 1
+    },
+    {
+      "ticker": "INM",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "IONM",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "IPX",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "KNOP",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "MITQ",
+      "sentiment_score": 8
+    },
+    {
+      "ticker": "NAII",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "NEOV",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "NNVC",
+      "sentiment_score": 2
+    },
+    {
+      "ticker": "SING",
+      "sentiment_score": 0
+    },
+    {
+      "ticker": "TAYD",
+      "sentiment_score": 8
+    }
+  ]
+}
